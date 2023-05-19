@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap');
+
+* {
+  font-family: 'Arimo', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+  padding: 0 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 40%;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 150px;
+}
+
+.umbrella-image {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.themes-container {
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arimo', sans-serif;
+}
+
+.themes-container h1 {
+  font-size: 24px !important;
+}
+
+.themes img {
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0px;
+  margin-bottom: 10px;
+}
+
+.upload-button {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.loader-container {
+  align-items: center;
+}
+
+.loader-container img {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#logo-upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #0096FF;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#logo-upload-button:hover {
+  background-color: #f1b2b2;
+}
+
+#logo-upload-button img {
+  margin-bottom: 50px;
+  height: 25px;
+  width: 20px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 90%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 80%;
+  max-width: 270px;
+  text-align: center;
+}
+
+#logo-upload-button {
+  /* height: 50px; */
+  width: 270px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Existing CSS styles */
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .image-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-container {
+    max-width: 300px;
+  }
+}
+
+/* Other responsive styles... */
